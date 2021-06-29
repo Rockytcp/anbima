@@ -1,13 +1,15 @@
 const express = require("express")
-
-const app = express()
+const mongoose = require("./database/dbConnection")
 
 const port = 3000
 
-app.listen(port, () => {
-    console.log(`Server running on port ${port}`)
-})
 
-app.get("/", (req, res) => {
-    res.sendFile("index.html", {root: "./templates"})
+mongoose.connect("mongodb://localhost:27017/anbima", erro => {
+    if(erro){
+        console.log(erro)
+    } else{
+        console.log("Conectado com MongoDB na porta 27017 e no banco de dados Anbima")
+        const app = express()
+        app.listen(port, () => console.log(`Servidor rodando na porta ${port}`));
+    }
 })
