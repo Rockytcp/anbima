@@ -1,0 +1,22 @@
+{
+  "name": "anbima",
+  "version": "1.0.0",
+  "description": "Teste com MongoDB e Anbima APIs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rockytcp/anbima.git"
+  },
+  "author": "Gustavo Braganti Pessoa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rockytcp/anbima/issues"
+  },
+  "homepage": "https://github.com/Rockytcp/anbima#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
